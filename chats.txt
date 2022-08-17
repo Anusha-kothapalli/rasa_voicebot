@@ -1,0 +1,5 @@
+intent,user_input,entity_name,entity_value,action,bot_reply
+action_session_start
+action_listen
+tel_revenue_total,telangana jan 2022,time,2022-01-01T00:00:00.000-08:00,10,18action_tel
+Telangana State Target: 455.0, Achieved: 8.700000000000003, Achieved Percentage: 14.139999999999999

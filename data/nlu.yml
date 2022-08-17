@@ -1,0 +1,589 @@
+version: "3.1"
+
+nlu:
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: tel_revenue_total
+  examples: |
+    - what is the revenue of [Telangana]{"entity":"state","value":"Telangana"} state on this month
+    - hey bot what is the revenue of [Telangana]{"entity":"state","value":"Telangana"} state on this month
+    - what is the revenue for [telangana]{"entity":"state","value":"telangana"} state on this month
+    - what is the business of [Telangana]{"entity":"state","value":"Telangana"} state this month
+    - what is the business for [telangana]{"entity":"state","value":"elangana"} state on this month
+    - hey bot what is the business of [telangana]{"entity":"state","value":"elangana"} state on this month
+    - what is the sales of [Telangana]{"entity":"state","value":"Telangana"} state this month
+    - what is the sales for [telangana]{"entity":"state","value":"telangana"} state on this month
+    - revenue of [Telangana]{"entity":"state","value":"Telangana"} state on this month
+    - revenue for [telangana]{"entity":"state","value":"telangana"} state this month
+    - business of [Telangana]{"entity":"state","value":"Telangana"} state on this month
+    - business for [telangana]{"entity":"state","value":"telangana"} state this month
+    - sales of [Telangana]{"entity":"state","value":"Telangana"} state on this moth
+    - yesterday [Telangana]{"entity":"state","value":"Telangana"} state
+    - today [Telangana]{"entity":"state","value":"Telangana"}state
+    - hey bot today [Telangana]{"entity":"state","value":"Telangana"}state
+    - [Telangana]{"entity":"state","value":"Telangana"} state this month
+    - [telangana]{"entity":"state","value":"telangana"} state onthis month
+    - [Telangana]{"entity":"state","value":"Telangana"} state year
+    - [telangana]{"entity":"state","value":"telangana"} state on year
+    - [Telangana]{"entity":"state","value":"Telangana"} state this on year january revenue
+    - [telangana]{"entity":"state","value":"telangana"} state this year on january revenue
+    - hey bot [telangana]{"entity":"state","value":"telangana"} state this year on january revenue
+    - [Telangana]{"entity":"state","value":"Telangana"} state this year  revenue
+    - hey bot [Telangana]{"entity":"state","value":"Telangana"} state this year  revenue
+    - [telangana]{"entity":"state","value":"telangana"} state this on year  revenue
+
+- intent: andh_revenue_total
+  examples: |
+    - what is the revenue of [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state this month
+    - hey bot what is the revenue for [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state this month
+    - what is the revenue of [AP]{"entity":"state","value":"AP"} state on this month
+    - what is the revenue for [andhra pradesh]{"entity":"state","value":"andhra pradesh"} state this month
+    - what is the business of [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state on this month
+    - hey bot what is the business of [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state on this month
+    - what is the business for [AP]{"entity":"state","value":"AP"} state this month
+    - what is the business of [andhra Pradesh]{"entity":"state","value":"andhra Pradesh"} state this month
+    - what is the sales of [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state this month
+    - revenue for [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state this month
+    - hey bot revenue of [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state this month
+    - business of [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state on this month
+    - business of [AP]{"entity":"state","value":"AP"} state this month
+    - business for [andhra pradesh]{"entity":"state","value":"andhra pradesh"} state this month
+    - hey bot business of [andhra pradesh]{"entity":"state","value":"andhra pradesh"} state this month
+    - sales of [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state this moth
+    - yesterday [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"}state
+    - today [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state on jan
+    - [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state this month
+    - [AP]{"entity":"state","value":"AP"} state this month
+    - [andhra pradesh]{"entity":"state","value":"andhra pradesh"} state this month
+    - [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state onyear
+    - [AP]{"entity":"state","value":"AP"} state on year
+    - [andhra pradesh]{"entity":"state","value":"andhra pradesh"} state on year
+    - [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state this year january revenue]
+    - [AP]{"entity":"state","value":"Andhra Pradesh"} state on this year january revenue]
+    - hey bot [AP]{"entity":"state","value":"Andhra Pradesh"} state on this year january revenue]
+    - [andhra pradesh]{"entity":"state","value":"andhra pradesh"} state this year january revenue
+    - [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state on this year  revenue
+    - hey bot [Andhra Pradesh]{"entity":"state","value":"Andhra Pradesh"} state on this year  revenue
+
+- intent: maha_revenue_total
+  examples: |
+    - what is the revenue for [Maharastra]{"entity":"state","value":"Maharastra"} state on this month
+    - hey bot what is the revenue for [Maharastra]{"entity":"state","value":"Maharastra"} state on this month
+    - what is the revenue for [maharastra]{"entity":"state","value":"maharastra"} on this month
+    - what is the revenue for [maharastra]{"entity":"state","value":"maharastra"} for this month
+    - hey bot what is the revenue for [maharastra]{"entity":"state","value":"maharastra"} state on this month
+    - what is the business for [Maharastra]{"entity":"state","value":"Maharastra"} state this month
+    - what is the business for [maharastra]{"entity":"state","value":"maharastra"} state on this month
+    - what is the sales of [Maharastra]{"entity":"state","value":"Maharastra"} state this month
+    - revenue for [Maharastra]{"entity":"state","value":"Maharastra"} state this month
+    - hey bot revenue of [Maharastra]{"entity":"state","value":"Maharastra"} state this month
+    - revenue of [maharastra]{"entity":"state","value":"maharastra"} state on this month
+    - business of [Maharastra]{"entity":"state","value":"Maharastra"} state this month
+    - sales of [Maharastra]{"entity":"state","value":"Maharastra"} state on this moth
+    - yesterday [Maharastra]{"entity":"state","value":"Maharastra"} state
+    - today [Maharastra]{"entity":"state","value":"Maharastra"} state
+    - [Maharastra]{"entity":"state","value":"Maharastra"} state on this month
+    - hey bot [Maharastra]{"entity":"state","value":"Maharastra"} state on this month
+    - [maharastra]{"entity":"state","value":"maharastra"} state this month
+    - [Maharastra]{"entity":"state","value":"Maharastra"} state on year
+    - [maharastra]{"entity":"state","value":"maharastra"} state year
+    - [Maharastra]{"entity":"state","value":"Maharastra"} state on this year january revenue
+    - [maharastra]{"entity":"state","value":"maharastra"} state this year january revenue
+    - hey bot [maharastra]{"entity":"state","value":"maharastra"} state this year january revenue
+    - [Maharastra]{"entity":"state","value":"Maharastra"} state on this year  revenue
+- intent: units
+  examples: |
+    - what is the revenue for [Nizamabad]{"entity":"units","value":"Nizamabad"} on jan 2022
+    - hey bot what is the revenue for [Nizamabad]{"entity":"units","value":"Nizamabad"} on jan 2022
+    - [Nizamabad]{"entity":"units","value":"Nizamabad"} on jan 2022
+    - what is the revenue for [nizamabad]{"entity":"units","value":"nizamabad"} 2022
+    - hey bot what is the revenue for [nizamabad]{"entity":"units","value":"nizamabad"} 2022
+    - hey bot what is the revenue for [nizamabad]{"entity":"units","value":"nizamabad"} jan 2022
+    - what is the sales for [Chandanagar]{"entity":"units","value":"Chandanagar"} of this month
+    - [Chandanagar]{"entity":"units","value":"Chandanagar"} of this month
+    - hey bot [Chandanagar]{"entity":"units","value":"Chandanagar"} of this month
+    - what is the revenue for [chandanagar]{"entity":"units","value":"chandanagar"} of last month
+    - what is the sales for [Karimnagar]{"entity":"units","value":"Karimnagar"} for the month of april
+    - [Karimnagar]{"entity":"units","value":"Karimnagar"} for the month of april
+    - [Karimnagar]{"entity":"units","value":"Karimnagar"} for the month of april
+    - hey bot [Karimnagar]{"entity":"units","value":"Karimnagar"} for the month of april
+    - revenue for [karimnagar]{"entity":"units","value":"karimnagar"} for the month of april
+    - what is the business for [Sangareddy]{"entity":"units","value":"Sangareddy"} for the month of april
+    - [Sangareddy]{"entity":"units","value":"Sangareddy"} on tha month of april
+    - hey bot [Sangareddy]{"entity":"units","value":"Sangareddy"} for the month of april
+    - what is the sales for [sangareddy]{"entity":"units","value":"sangareddy"} on may 2021
+    - what is the business for [Zaheerabad]{"entity":"units","value":"Zaheerabad"} on may 2021
+    - hey bot what is the business for [Zaheerabad]{"entity":"units","value":"Zaheerabad"} on may 2021
+    - [Zaheerabad]{"entity":"units","value":"Zaheerabad"} on may 2021
+    - what is the business for [zaheerabad]{"entity":"units","value":"zaheerabad"} on may 2021
+    - what is the revenue for [Srikakulam]{"entity":"units","value":"Srikakulam"} on may 2021
+    - hey bot what is the revenue for [Srikakulam]{"entity":"units","value":"Srikakulam"} on may 2021
+    - [Srikakulam]{"entity":"units","value":"Srikakulam"} on may 2021
+    - what is the sales for [srikakulam]{"entity":"units","value":"srikakulam"} on jan 2022
+    - hey bot what is the sales for [srikakulam]{"entity":"units","value":"srikakulam"} on jan 2022
+    - what is the revenue of [Kurnool]{"entity":"units","value":"Kurnool"} for the month of april
+    - [Kurnool]{"entity":"units","value":"Kurnool"} for tha month of april
+    - hey bot [Kurnool]{"entity":"units","value":"Kurnool"} for the month of april
+    - what is the business for [kurnool]{"entity":"units","value":"kurnool"} on may 2021
+    - what is the revenue for [Vizianagaram]{"entity":"units","value":"Vizianagaram"} for the month of april
+    - [Vizianagaram]{"entity":"units","value":"Vizianagaram"} for tha month of april
+    - hey bot [Vizianagaram]{"entity":"units","value":"Vizianagaram"} for the month of april
+    - business for [vizianagaram]{"entity":"units","value":"vizianagaram"} on may 2021
+    - business for [Kakinada]{"entity":"units","value":"Kakinada"} on may 2021
+    - [Kakinada]{"entity":"units","value":"Kakinada"} on may 2021
+    - hey bot [Kakinada]{"entity":"units","value":"Kakinada"} on may 2021
+    - revenue [Kakinada]{"entity":"units","value":"Kakinada"} on may 2021
+    - what is the sales for [kakinada]{"entity":"units","value":"kakinada"} for the month of april
+    - what is the sales for [Vizag W&C]{"entity":"units","value":"Vizag W&C"} on the month of april
+    - what is the sales for [Vizag W&C]{"entity":"units","value":"Vizag W&C"} for the month of april
+    - what is the sales for [Aurangabad]{"entity":"units","value":"Aurangabad"} for saturday
+    - hey bot what is the sales for [Aurangabad]{"entity":"units","value":"Aurangabad"} on saturday
+    - [Aurangabad]{"entity":"units","value":"Aurangabad"} on saturday
+    - hey bot [Aurangabad]{"entity":"units","value":"Aurangabad"} for saturday
+    - revenue [Aurangabad]{"entity":"units","value":"Aurangabad"} on saturday
+    - what is the business for [aurangabad]{"entity":"units","value":"aurangabad"} on the april
+    - hey bot what is the business for [aurangabad]{"entity":"units","value":"aurangabad"} for the april
+    - what is the revenue for [Nashik]{"entity":"units","value":"Nashik"} last month
+    - [Nashik]{"entity":"units","value":"Nashik"} last month
+    - hey bot [Nashik]{"entity":"units","value":"Nashik"} last month
+    - revenue [Nashik]{"entity":"units","value":"Nashik"} for last month
+    - what is the sales for [nashik]{"entity":"units","value":"nashik"} on june
+    - what is the revenue for [Total]{"entity":"units","value":"Total"} july 2021
+    - hey bot what is the revenue for [Total]{"entity":"units","value":"Total"} july 2021
+    - revenue for [total]{"entity":"units","value":"total"} for jan month
+    - [total]{"entity":"units","value":"total"} for jan month
+    - hey bot [total]{"entity":"units","value":"total"} for jan month
+    - revenue for [Sangamner]{"entity":"units","value":"Sangamner"} for last month
+    - hey bot revenue of [Sangamner]{"entity":"units","value":"Sangamner"} for last month
+    - [Sangamner]{"entity":"units","value":"Sangamner"} for last month
+    - [Sangamner]{"entity":"units","value":"Sangamnerr"} on last month
+    - hey bot [Sangamner]{"entity":"units","value":"Sangamner"} for last month
+    - revenue for [Sangamner]{"entity":"units","value":"Sangamner"} for last month
+    - revenue for [sangamner]{"entity":"units","value":"sangamner"} on last month
+    - revenue of [Sangamner]{"entity":"units","value":"Sangamner"} on last month
+    - revenue of [sangamner]{"entity":"units","value":"sangamner"} on last month
+    - hey bot what is the business for [Sangamner]{"entity":"units","value":"Sangamner"} on last month
+    - hey bot what is the business for [sangamner{"entity":"units","value":"sangamner"} on last month
+    - what is the sales for [sangamner]{"entity":"Sangamner_Unit","value":"sangamner"} on march
+    - [sangamner]{"entity":"units","value":"sangamner"} on march 2022
+    - what is the revenue for [sangamner]{"entity":"units","value":"sangamner"} on march
+    - revenue for [sangamner]{"entity":"units","value":"sangamner"} on june 2010
+    - sales for [sangamner]{"entity":"units","value":"sangamner"} on march 2021
+    - [sangamner]{"entity":"Sangamner_Unit","value":"sangamner"} on march 2021
+    - [sangamner]{"entity":"units","value":"sangamner"} june 2021
+    - hey bot what is the revenue for june [sangamner]{"entity":"units","value":"sangamner"} on march 2022
+    - what is the business for [sangamner]{"entity":"units","value":"sangamner"} on november 2022
+    - [sangamner]{"entity":"units","value":"sangamner"} for july 2021
+    - hey bot what is the revenue of [sangamner]{"entity":"units","value":"sangamner"} on 2022
+    - will you tell me the revenue for [sangamner]{"entity":"units","value":"sangamner"} on march 2022
+    - will you tell me the revenue of [sangamner]{"entity":"units","value":"sangamner"} on july 2021
+    - will you tell me the business for [sangamner]{"entity":"units","value":"sangamner"} for march
+
+- intent: nellore_Unit
+  examples: |
+    - what is the sales for [Nellore]{"entity":"nellore_Unit","value":"Nellore"} on the month of april
+    - hey bot what is the sales for [Nellore]{"entity":"nellore_Unit","value":"Nellore"} for the month of april
+    - [Nellore]{"entity":"nellore_Unit","value":"Nellore"} for the month of april
+    - hey bot [Nellore]{"entity":"nellore_Unit","value":"Nellore"} on tha month of april
+    - revenue [Nellore]{"entity":"nellore_Unit","value":"Nellore"} for tha month of april
+    - what is the revenue for [nellore]{"entity":"nellore_Unit","value":"nellore"} on june 2022
+    - revenue for [nellore]{"entity":"nellore_Unit","value":"nellore"} of july 2021
+    - [nellore]{"entity":"nellore_Unit","value":"nellore"} on june 2021
+    - hey bot what is the revenue for [nellore]{"entity":"nellore_Unit","value":"nellore"} june 2022
+    - hey bot will you tell me the revenue for [nellore]{"entity":"nellore_Unit","value":"nellore"} of june
+    - what is the revenue of [nellore]{"entity":"nellore_Unit","value":"nellore"} on june
+    - what is the revenue for [nellore]{"entity":"nellore_Unit","value":"nellore"} of march 2022
+    - what is the revenue of [nellore]{"entity":"nellore_Unit","value":"nellore"} on march 2021
+    - sales for [nellore]{"entity":"nellore_Unit","value":"nellore"} on june 2022
+    - hey bot what is the sales for [nellore]{"entity":"nellore_Unit","value":"nellore"} june 2022
+    - revenue for [nellore]{"entity":"nellore_Unit","value":"nellore"} june 2022
+    - what is the revenue of [nellore]{"entity":"nellore_Unit","value":"nellore"} june 2022
+    - what is the revenyue of [nellore]{"entity":"nellore_Unit","value":"nellore"} for jan 2021
+    - what is the business for [nellore]{"entity":"nellore_Unit","value":"nellore"} on jan 2022
+    - hey bot what is the business for [nellore]{"entity":"nellore_Unit","value":"nellore"} on jan 2022
+    - hey bot what is the revenue for [nellore]{"entity":"nellore_Unit","value":"nellore"} on june 2022
+    - [nellore]{"entity":"nellore_Unit","value":"nellore"} of june 2022
+    - revenue for [nellore]{"entity":"nellore_Unit","value":"nellore"} on june 2022
+    - revenue for [nellore]{"entity":"nellore_Unit","value":"nellore"} june 2022
+
+- intent: Nellore_Oncology_unit
+  examples: |
+    - what is the revenue for [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} on jan 2022
+    - [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} on jan 2022
+    - hey bot [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} on jan 2022
+    - revenue [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} for jan 2022
+    - business for [nellore oncology]{"entity":"Nellore_Oncology_unit","value":"nellore oncology"} on jan 2022
+    - hey bot what is the business for [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} on jan 2022
+    - hey bot what is the business for [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} for july 2021
+    - [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} on 2022
+    - [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} for 2022
+    - [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} revenue on jan 2022
+    - revenue for [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"}  on 2022
+    - revenue for [nellore oncology]{"entity":"Nellore_Oncology_unit","value":"nellore oncology"} on 2022
+    - sales for [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} on 2022
+    - business for [nellore oncology]{"entity":"Nellore_Oncology_unit","value":"nellore oncology"} on 2022
+    - hey bot what is the revenue of [nellore oncology]{"entity":"Nellore_Oncology_unit","value":"nellore oncology"} on jan 2022
+    - hey bot what is the business for [nellore oncology]{"entity":"Nellore_Oncology_unit","value":"nellore oncology"} on july 2022
+    - business of [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} on jan 2020
+    - [nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"nellore Oncology"} revenue for jan 2022
+    - what is the revenue of [Nellore oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore oncology"} jan 2022
+    - hey bot [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} revenue for july 2021
+    - [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} revenue for july 2021
+    - [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} on july 2021
+    - what is the business for [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} july 2021
+    - what is the revenue [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} june 2021
+    - revenue of [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} on march 2021
+    - [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} on june 2020
+    - [Nellore Oncology]{"entity":"Nellore_Oncology_unit","value":"Nellore Oncology"} for june 2020
+- intent: Unit_Vizag_Health
+  examples: |
+    - what is the business for [Vizag health city]{"entity":"vizag_health_units","value":"Vizag Health City"} on jan 2022
+    - hey bot what is the business for [Vizag health city]{"entity":"vizag_health_units","value":"Vizag Health City"} on jan 2022
+    - what is the revenue for [vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} last month
+    - revenue for [Vizag health city]{"entity":"vizag_health_units","value":"Vizag Health City"} last year
+    - hey bot revenue for [Vizag health city]{"entity":"vizag_health_units","value":"Vizag Health City"} last year
+    - [Vizag health city]{"entity":"vizag_health_units","value":"Vizag Health City"} of june
+    - revenue of [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} on june 2021
+    - hey bot revenue for [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} june 2022
+    - what is the revenue of [vizag health city]{"entity":"vizag_health_units","value":"vizag health city"} for july 2021
+    - hey bot what is the revenue for [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} for april 2022
+    - [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} on jun
+    - hey bot what is the revenue for [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} on march 2022
+    - hey bot what is the revenue of [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} for june 2021
+    - [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} revenue on june 2021
+    - hey bot revenue of [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} on june 2021
+    - hey bot revenue for [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} of july 2022
+    - business for [vizag health city]{"entity":"vizag_health_units","value":"vizag health city"} of june 2021
+    - sales for [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} for june 2021
+    - sales for [vizag health city]{"entity":"vizag_health_units","value":"vizag health city"} of june 2021
+    - hey bot what is the sales for [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} for march 2021
+    - hey bot what is the sales for [vizag health city]{"entity":"vizag_health_units","value":"vizag health city"} of march 2021
+    - revenue for [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} for june 2022
+    - hey bot what is revenue of [Vizag Health City]{"entity":"vizag_health_units","value":"Vizag Health City"} of july 2022
+- intent: Unit_MAdhOPD
+  examples: |
+    - what is the sales of [Madhapur  OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur  OPD"} last year
+    - hey bot what is the sales for [Madhapur  OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur  OPD"} last year
+    - what is the business for [madhapur  OPD]{"entity":"Unit_MAdhOPD","value":"madhapur  OPD"} last day
+    - [madhapur  opd]{"entity":"Unit_MAdhOPD","value":"madhapur  opd"} on june 2020
+    - hey bot [madhapur  opd]{"entity":"Unit_MAdhOPD","value":"madhapur  opd"} on june 2020
+    - [Madhapur  OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur  OPD"} on may 2021
+    - [Madhapur  OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur  OPD"} on may 2021
+    - what is the sales for [madhapur opd]{"entity":"Unit_MAdhOPD","value":"madhapur opd"} for tha month of april
+    - what is the business for [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} on july 2022
+    - revenue [madhapur opd]{"entity":"Unit_MAdhOPD","value":"madhapur opd"} last year
+    - revenue [madhapur opd]{"entity":"Unit_MAdhOPD","value":"madhapur opd"} last year
+    - what is revenue [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} on jan 2022
+    - [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} on jan 2022
+    - hey bot [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} on jan 2022
+    - what is the revenue of [madhapur opd]{"entity":"Unit_MAdhOPD","value":"madhapur opd"} on july 2022
+    - what is the revenue for [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} on jan 2022
+    -  hey bot what is the sales for [madhapur opd]{"entity":"Unit_MAdhOPD","value":"madhapur opd"} on jan 2022
+    - [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} jan 2022
+    - [madhapur opd]{"entity":"Unit_MAdhOPD","value":"madhapur opd"} jan 2022
+    - hey bot [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} jan 2022
+    - hey bot [madhapur OPD]{"entity":"Unit_MAdhOPD","value":"madhapur OPD"} on jan 2021
+    - hey bot can you tell me the revenue of [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} on march 2020
+    - hey bot can you tell me the revenue for [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} jan 2022
+    - hey bot [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} on jan 2022
+    - hey bot tell me what is the revenue of [Madhapur opd]{"entity":"Unit_MAdhOPD","value":"Madhapur opd"} on 2022
+    - hey bot revenue for [madhapur opd]{"entity":"Unit_MAdhOPD","value":"madhapur opd"} on july 2022
+    - will you tell me the [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} on jan 2022
+    - will you tell me the revenue of [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} on july 2022
+    - will you tell me the revenue of [madhapur opd]{"entity":"Unit_MAdhOPD","value":"madhapur opd"} on march 2022
+    - will you tell me the [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} jan 2022
+    - will you tell me the [madhapur opd]{"entity":"Unit_MAdhOPD","value":"madhapur opd"} jan 2022
+    - will you tell me the revenue of [Madhapur OPD]{"entity":"Unit_MAdhOPD","value":"Madhapur OPD"} on april 2022
+    - will you tell me the sales of [madhapur opd]{"entity":"Unit_MAdhOPD","value":"madhapur opd"} on jan 2022
+
+- intent: month_missing
+  examples: |
+    - Telangana
+    - what is revenue of Telangana
+    - telangana
+    - Andhra Pradesh
+    - what is revenue of Andhra Pradesh
+    - revenue of Andhra Pradesh
+    - AP
+    - andhra pradesh
+    - what is the revenue of andhra pradesh
+    - revenue of andhra pradesh
+    - hey bot  what is revenue for andhra pradesh
+    - Maharastra
+    - what is revenue for Maharastra
+    - revenue for Maharastra
+    - hey bot what is the revenue of Maharastra
+    - maharastra
+    - Nizamabad
+    - what is the revenue for Nizamabad
+    - hey bot what is the revenue for Nizamabad
+    - nizamabad
+    - what is the revenue of nizamabad
+    - Chandanagar
+    - hey bot ehat is the revenue for Chandanagar
+    - what is the revenue for Chandanagar
+    - chandanagar
+    - Karimnagar
+    - what is the revenue for Karimnagar
+    - hey bot what is the revenue for Karimnagar
+    - revenue for Karimnagar
+    - Karimnagar
+    - Madhapur
+    - hey bot what is the revnue for Madhapur
+    - revenue for Madhapur
+    - madhapur
+    - Sangareddy
+    - hey bot what is the revnue for Sangareddy
+    - what is the revnue for Sangareddy
+    - sangareddy
+    - Zaheerabad
+    - hey bot what is the revnue for Zaheerabad
+    - what is the revnue for Zaheerabad
+    - revnue for Zaheerabad
+    - zaheerabad
+    - Srikakulam
+    - hey bot what is the revnue for Srikakulam
+    - what is the revnue for Srikakulam
+    - revnue for Srikakulam
+    - srikakulam
+    - Kurnool
+    - hey bot what is the revnue for Kurnool
+    - what is the revnue for Kurnool
+    - revnue for Kurnool
+    - kurnool
+    - Vizianagaram
+    - hey bot what is the revnue for Vizianagaram
+    - what is the revnue for Vizianagaram
+    - revnue for Vizianagaram
+    - vizianagaram
+    - Vizag health city
+    - hey bot what is the revnue for Vizag health city
+    - vizag Health City
+    - Nellore
+    - hey bot what is the revnue for Nellore
+    - nellore
+    - Vizag MVP
+    - hey bot what is the revnue for Vizag MVP
+    - vizag MVP
+    - vizag mvp
+    - Vizag W&C
+    - hey bot what is the revnue for Vizag W&C
+    - vizag W and C
+    - hey bot what is the revnue for vizag W and C
+    - vizag w and c
+    - vizag wandc
+    - hey bot what is the revnue for vizag wandc
+    - Kakinada
+    - hey bot what is the revnue for Kakinada
+    - Kakinada
+    - hey bot what is the revnue for Vizag W&C
+    - Vizag W&C
+    - hey bot what is the revnue for Nellore Oncology
+    - Nellore Oncology
+    - nellore oncology
+    - Aurangabad
+    - hey bot what is the revnue for Aurangabad
+    - aurangabad
+    - Nashik
+    - hey bot what is the revnue for Nashik
+    - nashik
+    - Sangamner
+    - hey bot what is the revnue for Sangamner
+    - sangamner
+    - hey bot what is the revnue for Total
+    - Total
+    - hey bot what is the revnue for total
+    - total
+    - Madhapur  OPD
+    - hey bot what is the revnue for Madhapur  OPD
+    - madhapur  OPD
+    - hey bot what is the revnue for madhapur  opd
+    - hey bot what is the revnue for MOI  Hitech
+    - MOI  Hitech
+    - hey bot what is the revnue for moi  hitech
+    - MOI  hitech
+    - hey bot what is the revnue for madhapur
+    - madhapur
+    - hey bot what is the revnue for Madhapur
+    - Madhapur
+    - hey bot what is the revnue for MWC Hitech
+    - MWC Hitech
+    - hey bot what is the revnue for mwc Hitech
+    - mwc Hitech
+- intent: Unit_Hite
+  examples: |
+    - what is the sales for [MOI  Hitech]{"entity":"Unit_Hite","value":"MOI  Hitech"} july 2022
+    - [moi  Hitech]{"entity":"Unit_Hite","value":"moi Hitech"} last month
+    - what is the business of [MOI  hitech]{"entity":"Unit_Hite","value":"MOI hitech"} for july 2012
+    - hey bot what is the business of [MOI  hitech]{"entity":"Unit_Hite","value":"MOI hitech"} for july 2012
+    - what is the sales of [moi  hitech]{"entity":"Unit_Hite","value":"moi  hitech"} on july
+    - [moi hitech]{"entity":"Unit_Hite","value":"moi hitech"} on july 2022
+    - what is the sales of [MOI Hitech]{"entity":"Unit_Hite","value":"MOI Hitech"} last year
+    - what is the business of [moi Hitech]{"entity":"Unit_Hite","value":"moi Hitech"} last day
+    - what is the sales of [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} last year
+    - [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} jan 2022
+    - [moi hitech]{"entity":"Unit_Hite","value":"moi hitech"} on jan 2022
+    - hey bot [moi hitech]{"entity":"Unit_Hite","value":"moi hitech"} on jan 2022
+    - [MOI Hitech]{"entity":"Unit_Hite","value":"MOI Hitech"} march 2022
+    - [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} on march 2022
+    - hey bot [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} on march 2022
+    - revenue [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} on march 2022
+    - hey bot revenue [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} on march 2022
+    - hey bot revenue for [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} on march 2022
+    - hey bot what is the revenue for [MOI Hitech]{"entity":"Unit_Hite","value":"MOI Hitech"} on march 2022
+    - [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} on march 2022
+    - revenue of [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} for march 2022
+    - revenue of [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} on last jan 2022
+    - revenue for [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} on last march 2022
+    - what is the revenue of [MOI Hitech]{"entity":"Unit_Hite","value":"MOI Hitech"} for jan 2022
+    - what is the revenue for [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} on march 2022
+    - what is the revenue of [MOI Hitech]{"entity":"Unit_Hite","value":"MOI Hitech"} on november 2022
+    - sales for [moi hitech]{"entity":"Unit_Hite","value":"moi hitech"} for march 2022
+    - what is the sales of [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} for april
+    - will you tell me the revenue of [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} for march 2022
+    - will you tell me the revenue for [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} of march 2022
+    - will you tell me the revenue for [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} on march 2022
+    - will you tell me the revenue of [MOI hitech]{"entity":"Unit_Hite","value":"MOI hitech"} on march 2022
+
+- intent: Madh_unit
+  examples: |
+    - what is the sales of [madhapur]{"entity":"unit_Madh","value":"madhapur"} last month
+    - hey bot what is the sales of [madhapur]{"entity":"unit_Madh","value":"madhapur"} last month
+    - what is the business hey bot revenue [Madhapur]{"entity":"unit_Madh","value":"Madhapur"} on march
+    - what is the sales of [madhapur]{"entity":"unit_Madh","value":"madhapur"} for july
+    - what is the business of [MadhApur]{"entity":"unit_Madh","value":"MadhApur"} on jan 2022
+    - [MadhApur]{"entity":"unit_Madh","value":"MadhApur"} on jan 2022
+    - hey bot what is the business of [MadhApur]{"entity":"unit_Madh","value":"MadhApur"} on jan 2022
+    - revenue of [madhapur]{"entity":"unit_Madh","value":"madhapur"} this month
+    - revenue for [madhapur]{"entity":"unit_Madh","value":"madhapur"} this month
+    - hey bot revenue of [madhapur]{"entity":"unit_Madh","value":"madhapur"} this month
+    - hey bot revenue for [madhapur]{"entity":"unit_Madh","value":"madhapur"} this month
+    - what is the sales of [maDhaPur]{"entity":"unit_Madh","value":"maDhaPur"} of last month
+    - [madhapur]{"entity":"unit_Madh","value":"madhapur"} on last month
+    - [Madhapur]{"entity":"unit_Madh","value":"Madhapur"} lst month
+    - hey bot [Madhapur]{"entity":"unit_Madh","value":"Madhapur"} lst month
+
+- intent: MWC_Hitech_unit
+  examples: |
+    - what is the sales of [MWC Hitech]{"entity":"MWC_unit","value":"MWC Hitech"} on may 2021
+    - [MWC Hitech]{"entity":"MWC_unit","value":"MWC Hitech"} on may 2021
+    - what is the revenue of [mwc hitech]{"entity":"MWC_unit","value":"mwc hitech"} for the month of april
+    - what is the revenue for [mwc hitech]{"entity":"MWC_unit","value":"mwc hitech"} for the month of april
+    - hey bot what is the revenue of [mwc hitech]{"entity":"MWC_unit","value":"mwc hitech"} for the month of april
+    - hey bot what is the revenue for [mwc hitech]{"entity":"MWC_unit","value":"mwc hitech"} for the month of april
+    - what is the business of [mwc hitech]{"entity":"MWC_unit","value":"mwc hitech"} for the month of march
+    - revenue of [mwc hitech]{"entity":"MWC_unit","value":"mwc hitech"} for the month of last
+    - revenue for [mwc hitech]{"entity":"MWC_unit","value":"mwc hitech"} for the month of last
+    - hey bot revenue of [mwc hitech]{"entity":"MWC_unit","value":"mwc hitech"} for the month of last
+    - hey bot revenue for [mwc hitech]{"entity":"MWC_unit","value":"mwc hitech"} for the month of last
+    - [MWC Hitech]{"entity":"MWC_unit","value":"MWC Hitech"} revenue on feb
+    - business of [MWC Hitech]{"entity":"MWC_unit","value":"MWC Hitech"} on last month
+    - hey bot business of [MWC Hitech]{"entity":"MWC_unit","value":"MWC Hitech"} on last month
+    - sales of [MWC Hitech]{"entity":"MWC_unit","value":"MWC Hitech"} last year
+    - [mwc Hitech]{"entity":"MWC_unit","value":"mwc Hitech"} revenue on feb
+    - [mwc hitech]{"entity":"MWC_unit","value":"mwc hitech"} revenue on feb
+    - [MWC Hitech]{"entity":"MWC_unit","value":"MWC Hitech"} feb 2022
+    - hey bot [MWC Hitech]{"entity":"MWC_unit","value":"MWC Hitech"} feb 2022
+
+- intent: Vizag_MVP_Unit
+  examples: |
+    - what is the revenue of [Vizag MVP]{"entity":"MVP_Unit","value":"Vizag MVP"} for the month of april
+    - what is the revenue for [Vizag MVP]{"entity":"MVP_Unit","value":"Vizag MVP"} for the month of april
+    - hey bot what is the revenue of [Vizag MVP]{"entity":"MVP_Unit","value":"Vizag MVP"} for the month of april
+    - hey bot what is the revenue for [Vizag MVP]{"entity":"MVP_Unit","value":"Vizag MVP"} for the month of april
+    - [Vizag MVP]{"entity":"MVP_Unit","value":"Vizag MVP"} for the month of april
+    - revenue [Vizag MVP]{"entity":"MVP_Unit","value":"Vizag MVP"} for the month of april
+    - revenue for [Vizag MVP]{"entity":"MVP_Unit","value":"Vizag MVP"} for the month of april
+    - what is the business of [vizag MVP]{"entity":"MVP_Unit","value":"vizag MVP"} on jan 2022
+    - hey bot what is the business of [vizag MVP]{"entity":"MVP_Unit","value":"vizag MVP"} on jan 2022
+    - business of [vizag MVP]{"entity":"MVP_Unit","value":"vizag MVP"} on jan 2021
+    - sales of [vizag MVP]{"entity":"MVP_Unit","value":"vizag MVP"} last month
+    - what is the sales of [vizag MVP]{"entity":"MVP_Unit","value":"vizag MVP"} last year
+    - [Vizag MVP]{"entity":"MVP_Unit","value":"Vizag MVP"} of revenue for tha month of april
+    - hey bot [Vizag MVP]{"entity":"MVP_Unit","value":"Vizag MVP"} of revenue for tha month of april
+    - [vizag mvp]{"entity":"MVP_Unit","value":"vizag mvp"} for tha month of april
+    - [vizag mvp]{"entity":"MVP_Unit","value":"vizag mvp"} revenue for tha month of april
+    - [Vizag MVP]{"entity":"MVP_Unit","value":"Vizag MVP"} june 2022
+    - hey bot [Vizag MVP]{"entity":"MVP_Unit","value":"Vizag MVP"} june 2022
+
+- intent: Vizag_W&C_unit
+  examples: |
+    - [Vizag W&C]{"entity":"W&C_unit","value":"Vizag W&C"} for the month of april
+    - hey bot [Vizag W&C]{"entity":"W&C_unit","value":"Vizag W&C"} for the month of april
+    - revenue [Vizag W&C]{"entity":"W&C_unit","value":"Vizag W&C"} for the month of april
+    - what is the business of [vizag w&c]{"entity":"W&C_unit","value":"vizag w&c"} on may 2021
+    - [Vizag W&C]{"entity":"W&C_unit","value":"Vizag W&C"} of revenue for tha month of april
+    - what is the revenue of [Vizag W&C]{"entity":"W&C_unit","value":"Vizag W&C"} for the month of march
+    - hey bot what is the revenue of [Vizag W&C]{"entity":"W&C_unit","value":"Vizag W&C"} for the month of march
+    - [Vizag W&C]{"entity":"W&C_unit","value":"Vizag W&C"} business for the month of april
+    - sales of [Vizag W&C]{"entity":"W&C_unit","value":"Vizag W&C"} for the last month
+    - business for [Vizag W&C]{"entity":"W&C_unit","value":"Vizag W&C"} june 2022
+    - [Vizag W&C]{"entity":"W&C_unit","value":"Vizag W&C"} jan 2022
+    - hey bot [Vizag W&C]{"entity":"W&C_unit","value":"Vizag W&C"} jan 2022
+    - what is the revenue of [vizag w&c]{"entity":"W&C_unit","value":"vizag w&c"} on last month
+    - what is the sales of [vizag w&c]{"entity":"W&C_unit","value":"vizag w&c"} last month
+    - [vizag W&C]{"entity":"W&C_unit","value":"vizag W&C"} jan 2022
+    - [vizag W&C]{"entity":"W&C_unit","value":"vizag W&C"} revenue on jan 2022
+    - what is the revenue of [Vizag w&c]{"entity":"W&C_unit","value":"Vizag w&c"} last month
+    - what is the revenue for [Vizag w&c]{"entity":"W&C_unit","value":"Vizag w&c"} last month
+    - what is the revnue of [Vizag WandC]{"entity":"W&C_unit","value":"Vizag WandC"} on jan 2022
+    - [vizag wandc]{"entity":"W&C_unit","value":"vizag wandc"} jan 2022
+    - [vizag W and C]{"entity":"W&C_unit","value":"vizag W and C"} revenue on last june 2022
+    - revenue for [vizag W and C]{"entity":"W&C_unit","value":"vizag W and C"} revenue on last june 2022
+    - [vizag w and c]{"entity":"W&C_unit","value":"vizag w&c"} sales on june 2021
+    - hey bot [vizag w and c]{"entity":"W&C_unit","value":"vizag w&c"} sales on june 2021
+    - what is the revenue of [vizag w and c]{"entity":"W&C_unit","value":"vizag w and c"} jan 2022
+    - hey bot what is the revenue for [vizag w and c]{"entity":"W&C_unit","value":"vizag w and c"} on july 2022
+    - hey bot what is the revenue of [vizag w and c]{"entity":"W&C_unit","value":"vizag w and c"} on july 2022
+- intent: unit_missing
+  examples: |
+    - [2021]{"entity":"time","value":"2021"}
+    - [2022]{"entity":"time","value":"2022"}
+    - [2018]{"entity":"time","value":"2018"}
+    - [january]{"entity":"time","value":"january"}
+    - [february]{"entity":"time","value":"february"}
+    - [march]{"entity":"time","value":"march"}
+    - [april]{"entity":"time","value":"april"}
+    - [may]{"entity":"time","value":"may"}
+    - [june]{"entity":"time","value":"june"}
+    - [july]{"entity":"time","value":"july"}
+    - [august]{"entity":"time","value":"august"}
+    - [september]{"entity":"time","value":"september"}
+    - [october]{"entity":"time","value":"october"}
+    - [november]{"entity":"time","value":"november"}
+    - [december]{"entity":"time","value":"december"}
+    - [2011]{"entity":"time","value":"2011"}
+- intent: out_of_scope
+  examples: |
+    - hi
+    - hello
+    - how are you?
+    - who are you?
+    - what are you doing?
+    - good
+    - bad
+    - no
+    - yup
+    - hell
+    - what
+    - yes
+    - who
+    - please

@@ -1,0 +1,14 @@
+version: "3.1"
+
+rules:
+- rule: Ask the user to rephrase whenever they gave out of intent
+  steps:
+  - intent: out_of_scope
+  - action: utter_default
+#  - action: action_save_conversation
+
+- rule: If the user miss month and year in the intent
+  steps:
+  - intent: month_missing
+  - action: utter_month_missing
+#  - action: action_save_conversation

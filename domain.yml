@@ -1,0 +1,151 @@
+version: "3.1"
+
+intents:
+  - goodbye
+  - bot_challenge
+  - tel_revenue_total
+  - andh_revenue_total
+  - maha_revenue_total
+  - units
+  - Unit_MAdhOPD
+  - Unit_Hite
+  - Madh_unit
+  - out_of_scope
+  - MWC_Hitech_unit
+  - Vizag_MVP_Unit
+  - Vizag_W&C_unit
+  - month_missing
+  - Unit_Vizag_Health
+  - Nellore_Oncology_unit
+  - nellore_Unit
+entities:
+  - time
+  - date_slot
+  - units
+  - state
+  - Unit_MAdhOPD
+  - Unit_Hite
+  - unit_Madh
+  - MWC_unit
+  - MVP_Unit
+  - W&C_unit
+  - vizag_health_units
+  - Nellore_Oncology_unit
+  - nellore_Unit
+  - unit_missing
+
+slots:
+  nellore_Unit:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: nellore_Unit
+  Nellore_Oncology_unit:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: Nellore_Oncology_unit
+  vizag_health_units:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: vizag_health_units
+  MWC_unit:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: MWC_unit
+  W&C_unit:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: W&C_unit
+  MVP_Unit:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: MVP_Unit
+  unit_Madh:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: unit_Madh
+  Unit_Hite:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: Unit_Hite
+  Unit_MAdhOPD:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: Unit_MAdhOPD
+  state:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: state
+  units:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: units
+  time:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: time
+  date_slot:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: date_slot
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_default:
+  - text: "I am sorry,I didn't get that. Could you please repeat your query?"
+  utter_month_missing:
+  - text: "I am not sure what you are aiming for,Please enter the year and month for units"
+  utter_unit_missing:
+  - text: "Please enter the unit name with the month and year"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+#  utter_please_rephrase:
+#  - text: I'm sorry, I didn't quite understand that. Could you rephrase
+actions:
+  - action_tel
+  - action_andh
+  - action_maha
+  - action_Unit_MadOPD
+  - action_time
+  - action_Unit_MOIhitech
+  - action_Madhunit
+  - action_Unit_MWC
+  - action_Unit_MVP
+  - action_Unit_W&C
+  - action_Unit_W&C1
+  - action_Vizag_Health
+  - action_Nellore_oncology
+  - action_Nellore
+#  - action_save_conversation
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

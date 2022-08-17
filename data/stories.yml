@@ -1,0 +1,100 @@
+version: "3.1"
+stories:
+- story: ask_state_wise_tel
+  steps:
+  - intent: tel_revenue_total
+  - action: action_tel
+#  - action: action_save_conversation
+
+- story: ask_state_wise_andh
+  steps:
+  - intent: andh_revenue_total
+  - action: action_andh
+#  - action: action_save_conversation
+
+- story: ask_state_wise_maha
+  steps:
+  - intent: maha_revenue_total
+  - action: action_maha
+#  - action: action_save_conversation
+- story: ask_unit_wise_revenue
+  steps:
+  - intent: units
+  - action: action_time
+#  - action: action_save_conversation
+
+- story: ask_Unit_Madh
+  steps:
+  - intent: Unit_MAdhOPD
+  - action: action_Unit_MadOPD
+#  - action: action_save_conversation
+
+- story: ask_Unit_Hite
+  steps:
+  - intent: Unit_Hite
+  - action: action_Unit_MOIhitech
+#  - action: action_save_conversation
+
+- story: Out_of_scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_default
+#  - action: action_save_conversation
+
+- story: Unit_month_missing
+  steps:
+  - intent: month_missing
+  - action: utter_month_missing
+#  - action: action_save_conversation
+- story: Unit_missing
+  steps:
+  - intent: unit_missing
+  - action: utter_unit_missing
+- story: ask_unit_wise_revenue
+  steps:
+  - intent: Madh_unit
+  - action: action_Madhunit
+#  - action: action_save_conversation
+
+- story: ask_Unit_MWC
+  steps:
+  - intent: MWC_Hitech_unit
+  - action: action_Unit_MWC
+#  - action: action_save_conversation
+
+- story: ask_Unit_MVP
+  steps:
+  - intent: Vizag_MVP_Unit
+  - action: action_Unit_MVP
+#  - action: action_save_conversation
+
+- story: ask_Unit_W&C
+  steps:
+  - intent: Vizag_W&C_unit
+  - action: action_Unit_W&C
+#  - action: action_save_conversation
+
+- story: ask_Unit_W&C
+  steps:
+  - intent: Vizag_W&C_unit
+  - action: action_Unit_W&C1
+#  - action: action_save_conversation
+
+- story: Vizag_health_unit
+  steps:
+  - intent: Unit_Vizag_Health
+  - action: action_Vizag_Health
+#  - action: action_save_conversation
+
+- story: Nelloe_Oncology
+  steps:
+  - intent: Nellore_Oncology_unit
+  - action: action_Nellore_oncology
+#  - action: action_save_conversation
+
+- story: nellore_Unit
+  steps:
+  - intent: nellore_Unit
+  - action: action_Nellore
+#  - action: action_save_conversation
+
